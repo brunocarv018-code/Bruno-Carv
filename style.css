@@ -7,12 +7,16 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    color: #333;
+    background-color: #f0f8ff;
 }
 
 header {
-    background: #333;
+   background: #4CAF50; /* Verde no lugar do #1a1a1a */
     color: #fff;
     padding: 1rem;
+    position: sticky;
+    top: 0;
 }
 
 nav {
@@ -53,15 +57,19 @@ section {
 
 .card-projeto {
     border: 1px solid #ddd;
-    padding: 1rem;
+    padding: 1.5rem;
     border-radius: 8px;
+    background: #fff9e6; /* Amarelo bem clarinho */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
 }
 
 footer {
-    background: #333;
+    background: #4CAF50; /* Mesmo verde do header */
     color: #fff;
     text-align: center;
-    padding: 1rem;
+    padding: 1.5rem;
+    margin-top: 3rem;
 }
 
 /* Responsividade básica */
