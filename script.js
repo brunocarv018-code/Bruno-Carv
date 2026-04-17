@@ -1,18 +1,18 @@
 const projetos = [
     {
-        titulo: "Projeto 1",
+        titulo: "Projeto I",
         descricao: "Descrição breve do que foi feito nesse projeto.",
         tecnologias: "HTML, CSS, JS",
         link: "https://github.com/seuusuario/projeto1"
     },
     {
-        titulo: "Projeto 2", 
+        titulo: "Projeto I", 
         descricao: "Outro projeto importante para seu portfólio.",
         tecnologias: "React, Node.js",
         link: "https://github.com/seuusuario/projeto2"
     },
     {
-        titulo: "Projeto 3",
+        titulo: "Projeto III",
         descricao: "Mais um projeto para mostrar suas habilidades.",
         tecnologias: "Python, Flask",
         link: "https://github.com/seuusuario/projeto3"
