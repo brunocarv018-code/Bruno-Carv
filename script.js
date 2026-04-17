@@ -30,7 +30,7 @@ function renderizarProjetos() {
             <h3>${projeto.titulo}</h3>
             <p>${projeto.descricao}</p>
             <p><strong>Tecnologias:</strong> ${projeto.tecnologias}</p>
-            <a href="${projeto.link}" target="_blank">Ver projeto</a>
+            <a href="${projeto.link}" target="_blank" onclick="window.scrollTo(0, 0)">Ver projeto</a>
         `;
         
         container.appendChild(card);
