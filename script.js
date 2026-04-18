@@ -36,7 +36,8 @@ function renderizarProjetos() {
         const botao = document.createElement('button');
         botao.innerText = 'Ver projeto';
         botao.onclick = function() {
-            alert('Em breve!');
+            this.innerText = 'Em breve!';
+            this.disabled = true;
             window.scrollTo(0, 0);
         };
         
