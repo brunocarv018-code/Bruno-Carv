@@ -11,17 +11,17 @@
         <nav>
             <h1>BRUNO CARVALHO</h1>
             <ul>
-                <li><a href="#sobre">Apoio</a></li>
-                <li><a href="#sobre">Me conheça</a></li>
+                <li><a href="#" id="btn-me-conheca">Me conheça</a></li>
                 <li><a href="#projetos">Meus Projetos</a></li>
+                <li><a href="#" id="btn-apoio">Apoio</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section id="sobre">
-            <h2>Olá tudo bem?</h2>
-            <p>sou m jovem desenvolvedor em construção, aqui vou listar aos poucos minhas peripécias na web! vamos juntos para o mundo codável!</p>
+            <h2>Me conheça</h2>
+            <p>Um jovem desenvolvedor em construção, vamos juntos para o mundo codável</p>
         </section>
 
         <section id="projetos">
@@ -35,12 +35,34 @@
     <footer>
         <p>&copy; 2026 Bruno Carvalho. Todos os direitos reservados.</p>
     </footer>
- <div id="modal" class="modal">
+
+    <!-- POP-UP DOS PROJETOS -->
+    <div id="modal-projeto" class="modal">
         <div class="modal-conteudo">
-            <span class="fechar">&times;</span>
+            <span class="fechar" data-modal="modal-projeto">&times;</span>
             <h3>Em breve!</h3>
             <p>Este projeto ainda está em desenvolvimento. Volte em alguns dias 🚀</p>
         </div>
+    </div>
+
+    <!-- POP-UP ME CONHEÇA -->
+    <div id="modal-sobre" class="modal">
+        <div class="modal-conteudo">
+            <span class="fechar" data-modal="modal-sobre">&times;</span>
+            <h3>Sobre mim</h3>
+            <p>Me chamo Bruno Carvalho, estou cursando Tecnologia em Sistemas para Internet, e aqui nesse hub, irei postar e atualizar meus futuros projetos. Seja muito bem vindo!</p>
+        </div>
+    </div>
+
+    <!-- POP-UP APOIO -->
+    <div id="modal-apoio" class="modal">
+        <div class="modal-conteudo">
+            <span class="fechar" data-modal="modal-apoio">&times;</span>
+            <h3>Apoio</h3>
+            <p>Em breve você poderá nos apoiar, obrigado pelo clique!</p>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
