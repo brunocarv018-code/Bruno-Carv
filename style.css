@@ -11,12 +11,12 @@ html {
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #f0f8ff;
+    color: #1e293b;
+    background-color: #e0f2fe; /* Azul claro, mais claro que o marinho */
 }
 
 header {
-    background: #4CAF50; /* Verde no lugar do #1a1a1a */
+    background: #0f172a; /* Azul marinho */
     color: #fff;
     padding: 1rem;
     position: sticky;
@@ -41,6 +41,10 @@ nav ul {
 nav a {
     color: #fff;
     text-decoration: none;
+}
+
+nav a:hover {
+    color: #38bdf8;
 }
 
 main {
@@ -68,7 +72,7 @@ section {
 }
 
 .card-projeto button {
-    background: #0ea5e9;
+    background: #0f172a; /* Mesmo azul marinho do header */
     color: white;
     border: none;
     padding: 10px 20px;
@@ -78,11 +82,16 @@ section {
 }
 
 .card-projeto button:hover {
-    background: #0284c7;
+    background: #1e293b;
+}
+
+.card-projeto button:disabled {
+    background: #64748b;
+    cursor: not-allowed;
 }
 
 footer {
-    background: #4CAF50; /* Mesmo verde do header */
+    background: #0f172a; /* Azul marinho igual header */
     color: #fff;
     text-align: center;
     padding: 1.5rem;
