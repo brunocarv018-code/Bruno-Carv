@@ -16,6 +16,28 @@ const projetos = [
     }
 ];
 
+const modal = document.getElementById('modal');
+const spanFechar = document.querySelector('.fechar');
+
+function abrirModal() {
+    modal.style.display = 'block';
+    window.scrollTo(0, 0);
+}
+
+function fecharModal() {
+    modal.style.display = 'none';
+}
+
+// Fecha clicando no X
+spanFechar.onclick = fecharModal;
+
+// Fecha clicando fora do modal
+window.onclick = function(event) {
+    if (event.target == modal) {
+        fecharModal();
+    }
+}
+
 function renderizarProjetos() {
     const container = document.getElementById('lista-projetos');
     container.innerHTML = '';
@@ -35,11 +57,7 @@ function renderizarProjetos() {
         
         const botao = document.createElement('button');
         botao.innerText = 'Ver projeto';
-        botao.onclick = function() {
-            this.innerText = 'Em breve!';
-            this.disabled = true;
-            window.scrollTo(0, 0);
-        };
+        botao.onclick = abrirModal; // Abre o pop-up
         
         card.appendChild(h3);
         card.appendChild(p1);
