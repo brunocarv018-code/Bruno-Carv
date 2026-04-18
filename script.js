@@ -16,7 +16,7 @@ const projetos = [
     }
 ];
 
-// CONTROLE DOS MODAIS
+
 function abrirModal(idModal) {
     document.getElementById(idModal).style.display = 'block';
     window.scrollTo(0, 0);
@@ -26,7 +26,7 @@ function fecharModal(idModal) {
     document.getElementById(idModal).style.display = 'none';
 }
 
-// Fecha clicando no X
+
 document.querySelectorAll('.fechar').forEach(span => {
     span.onclick = function() {
         const idModal = this.getAttribute('data-modal');
@@ -34,14 +34,14 @@ document.querySelectorAll('.fechar').forEach(span => {
     }
 });
 
-// Fecha clicando fora do modal
+
 window.onclick = function(event) {
     if (event.target.classList.contains('modal')) {
         event.target.style.display = 'none';
     }
 }
 
-// BOTÕES DO MENU
+
 document.getElementById('btn-me-conheca').onclick = function(e) {
     e.preventDefault();
     abrirModal('modal-sobre');
@@ -52,7 +52,7 @@ document.getElementById('btn-apoio').onclick = function(e) {
     abrirModal('modal-apoio');
 };
 
-// RENDERIZA OS PROJETOS
+
 function renderizarProjetos() {
     const container = document.getElementById('lista-projetos');
     container.innerHTML = '';
