@@ -58,13 +58,19 @@ section {
     margin-top: 1rem;
 }
 
-.card-projeto {
-    border: 1px solid #ddd;
-    padding: 1.5rem;
-    border-radius: 8px;
-    background: #fff9e6; /* Amarelo bem clarinho */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    transition: transform 0.2s;
+.card-projeto button {
+    background: #0ea5e9;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.card-projeto button:hover {
+    background: #0284c7;
+}
 }
 
 footer {
