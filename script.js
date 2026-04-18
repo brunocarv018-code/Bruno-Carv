@@ -16,28 +16,43 @@ const projetos = [
     }
 ];
 
-const modal = document.getElementById('modal');
-const spanFechar = document.querySelector('.fechar');
-
-function abrirModal() {
-    modal.style.display = 'block';
+// CONTROLE DOS MODAIS
+function abrirModal(idModal) {
+    document.getElementById(idModal).style.display = 'block';
     window.scrollTo(0, 0);
 }
 
-function fecharModal() {
-    modal.style.display = 'none';
+function fecharModal(idModal) {
+    document.getElementById(idModal).style.display = 'none';
 }
 
 // Fecha clicando no X
-spanFechar.onclick = fecharModal;
+document.querySelectorAll('.fechar').forEach(span => {
+    span.onclick = function() {
+        const idModal = this.getAttribute('data-modal');
+        fecharModal(idModal);
+    }
+});
 
 // Fecha clicando fora do modal
 window.onclick = function(event) {
-    if (event.target == modal) {
-        fecharModal();
+    if (event.target.classList.contains('modal')) {
+        event.target.style.display = 'none';
     }
 }
 
+// BOTÕES DO MENU
+document.getElementById('btn-me-conheca').onclick = function(e) {
+    e.preventDefault();
+    abrirModal('modal-sobre');
+};
+
+document.getElementById('btn-apoio').onclick = function(e) {
+    e.preventDefault();
+    abrirModal('modal-apoio');
+};
+
+// RENDERIZA OS PROJETOS
 function renderizarProjetos() {
     const container = document.getElementById('lista-projetos');
     container.innerHTML = '';
@@ -57,7 +72,9 @@ function renderizarProjetos() {
         
         const botao = document.createElement('button');
         botao.innerText = 'Ver projeto';
-        botao.onclick = abrirModal; // Abre o pop-up
+        botao.onclick = function() {
+            abrirModal('modal-projeto');
+        };
         
         card.appendChild(h3);
         card.appendChild(p1);
