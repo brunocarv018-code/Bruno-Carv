@@ -1,17 +1,17 @@
 const projetos = [
     {
         titulo: "Projeto I",
-        descricao: "Descrição breve do que foi feito nesse projeto.",
+        descricao: "Construção do MVP (Produto Mínimo Viável)",
         tecnologias: "HTML, CSS, JS"
     },
     {
         titulo: "Projeto II", 
-        descricao: "Outro projeto importante para seu portfólio.",
+        descricao: "Migração com React.",
         tecnologias: "React, Node.js"
     },
     {
         titulo: "Projeto III",
-        descricao: "Mais um projeto para mostrar suas habilidades.",
+        descricao: "Mais um projeto para mostrar minhas habilidades.",
         tecnologias: "Python, Flask"
     }
 ];
